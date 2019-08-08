@@ -1,5 +1,9 @@
-<h4>Welcome to Server Manager 4.0</h4>
+<h4>{{getCurrentUser() | uppercase}}, welcome to Server Manager 4.0</h4>
 <p>Manage your Servers and Users.</p>
 <button class="btn btn-primary" (click)="onLoadServers(1)">Load servers</button>
+<div class="btn-group" style="margin: 1rem">
+  <button class="btn btn-default" (click)="onLogin()">Login</button>
+  <button class="btn btn-default" (click)="onLogout()">Logout</button>
+</div>
 
 
